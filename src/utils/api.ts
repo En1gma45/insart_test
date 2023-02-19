@@ -8,9 +8,9 @@ export const ApiCall = async () => {
     localStorage.setItem('requestCounter', `1`);
     return new Error('External server error');
   }
-  const response: IResponse[] = await fetch(
-    'https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=5',
-  ).then((data) => data.json());
+  const response: IResponse[] = await fetch('p24api/pubinfo?exchange&coursid=5').then((data) =>
+    data.json(),
+  );
 
   localStorage.setItem('requestCounter', `${Number(localStorage.getItem('requestCounter')) + 1}`);
   return response;

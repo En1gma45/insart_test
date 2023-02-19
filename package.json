@@ -2,7 +2,7 @@
   "name": "insart_tz",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://api.privatbank.ua/p24api",
+  "proxy": "http://135.181.29.13:3128",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
